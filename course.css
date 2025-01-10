@@ -11,6 +11,7 @@ body {
 .navbar {
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -75,8 +76,8 @@ body {
 
 .columns {
     display: flex;
-    flex-wrap: nowrap; 
-    justify-content: space-between; 
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items for smaller screens */
     gap: 20px; 
     padding: 20px;
     overflow-x: auto; 
