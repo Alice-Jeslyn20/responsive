@@ -17,6 +17,7 @@
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -180,41 +181,43 @@
     }
   }
 
-  @media (max-width: 480px) {
-    .logo img {
-      height: 60px;
+  @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .topnav {
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .about-container {
+        padding: 15px;
+      }
     }
 
-    .navbar h1 {
-      font-size: 1.2em;
-    }
+    @media (max-width: 480px) {
+      .navbar h1 {
+        font-size: 1.5rem;
+      }
 
-    .topnav a {
-      font-size: 12px;
-      padding: 8px 10px;
-    }
+      .logo img {
+        height: 60px;
+      }
 
-    .hero h2 {
-      font-size: 1.2em;
+      .topnav a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
     }
-
-    .hero p {
-      font-size: 0.8em;
-    }
-
-    .hero a {
-      font-size: 0.8em;
-      padding: 6px 12px;
-    }
-
-    .section h3 {
-      font-size: 1.2em;
-    }
-
-    .section p {
-      font-size: 0.8em;
-    }
-}
 
 </style>
 </head>
