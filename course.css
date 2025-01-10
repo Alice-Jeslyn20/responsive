@@ -165,13 +165,7 @@ body {
   }
 
 
-
-
-
-
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .topnav {
         flex-direction: column;
         gap: 10px;
