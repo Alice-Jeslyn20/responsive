@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - IQMATH TECHNOLOGIES</title>
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #9bc8f6;
+    opacity: 0.9;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar h1 {
+    text-shadow: 0 0 20px #1023f1;
+    color: #f2f2f2;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.topnav {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #268dd6;
+    color: white;
+  }
+    .about-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .about-container h1 {
+      text-shadow: 0 0 20px #000000;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .about-container h2 {
+      text-shadow: 0 0 20px #000000;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    .about-container p {
+      margin-bottom: 20px;
+    }
+    .about-container img {
+      display: block;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .columns {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  background-color: #000000;
+  transform: translateY(-5px);
+}
+
+
+
+.card:hover h2, 
+.card:hover p {
+    color: #ffffff;
+    text-shadow: 0 0 20px #000000;
+}
+
+.card h2 {
+    text-shadow: 0 0 20px #fdfcfc;
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.card p {
+    text-shadow: 0 0 20px #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer {
+      background: #000000;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .topnav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .hero h2 {
+      font-size: 1.5em;
+    }
+
+    .hero p {
+      font-size: 0.9em;
+    }
+
+    .hero a {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+
+    .section h3 {
+      font-size: 1.5em;
+    }
+
+    .section p {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo img {
+      height: 60px;
+    }
+
+    .navbar h1 {
+      font-size: 1.2em;
+    }
+
+    .topnav a {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.2em;
+    }
+
+    .hero p {
+      font-size: 0.8em;
+    }
+
+    .hero a {
+      font-size: 0.8em;
+      padding: 6px 12px;
+    }
+
+    .section h3 {
+      font-size: 1.2em;
+    }
+
+    .section p {
+      font-size: 0.8em;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+    
+        <div class="topnav" >
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="about.html" onclick="abt">About</a>
+        </div>
+    
+        <h1>IQMATH TECHNOLOGIES</h1>
+    
+        
+    </div>
+  <div class="about-container">
+    <h2>About Us</h2>
+    <h1>Online Education Tailored to You</h1>
+    <div class="columns">
+        <div class="card">
+        <img src="assets/distant-education.png" alt="learn" width="50px" height="50px">
+          <h2>Learn From Anywhere</h2>
+          <p> Our platform allows you to access your courses at any time and from any location, making it easy to incorporate learning into your daily routine with maximum flexibility.<br>
+
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/tutor (2).png"alt="learn" width="50px" height="50px">
+          <h2>Expert Instructor</h2>
+          <p>Explore topics with assurance, supported by industry professionals. Our experienced instructors offer real-world insights, ensuring a hands-on and enriching learning experience.</p>
+        </div>
+        <div class="card">
+          <img src="assets/clarification (1).png" alt="learn" width="50px" height="50px">
+          <h2>24/7 Live Support</h2>
+          <p>Enjoy seamless learning with our 24/7 support. Whether you have questions about the content or need technical help, our dedicated team is available to assist you anytime, day or night.</p>
+        </div>
+      </div>
+      
+   
+  </div>
+  <footer class="footer">
+    <p>&copy; 2025 IQMATH TECHNOLOGIES. All rights reserved.</p>
+    <p><a href="contact.html">Get in Touch</a></p>
+  </footer>
+</body>
+</html>
