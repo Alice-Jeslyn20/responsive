@@ -165,54 +165,72 @@ body {
   }
 
 
-  /* Responsive Styles */
-
-/* Tablet Screens (768px and below) */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
 
+    .topnav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .hero h2 {
+      font-size: 1.5em;
+    }
+
+    .hero p {
+      font-size: 0.9em;
+    }
+
+    .hero a {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+
+    .section h3 {
+      font-size: 1.5em;
+    }
+
+    .section p {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
     .logo img {
-        height: 60px;
+      height: 60px;
     }
 
-    .columns {
-        justify-content: center;
-    }
-
-    .card {
-        max-width: 90%;
-        min-width: auto;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Mobile Screens (480px and below) */
-@media (max-width: 480px) {
     .navbar h1 {
-        font-size: 1.2rem;
+      font-size: 1.2em;
     }
 
     .topnav a {
-        font-size: 0.9rem;
-        padding: 8px;
+      font-size: 12px;
+      padding: 8px 10px;
     }
 
-    .card h2 {
-        font-size: 1.2rem;
+    .hero h2 {
+      font-size: 1.2em;
     }
 
-    .card p {
-        font-size: 0.85rem;
+    .hero p {
+      font-size: 0.8em;
     }
 
-    .card button {
-        font-size: 0.9rem;
-        padding: 8px 15px;
+    .hero a {
+      font-size: 0.8em;
+      padding: 6px 12px;
+    }
+
+    .section h3 {
+      font-size: 1.2em;
+    }
+
+    .section p {
+      font-size: 0.8em;
     }
 }
